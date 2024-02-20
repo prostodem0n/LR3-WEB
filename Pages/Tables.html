@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблиці</title>
+</head>
+<body>
+    <style>table,th,td{
+        border: 2px solid rgb(0, 0, 0);
+        text-align:center;
+      } 
+      
+      th,td{
+         padding:5px;
+      }
+
+      caption{
+        font-size:25px;
+        color:rgb(0, 0, 0);
+      }
+
+      thead{
+        background-color: rgb(253, 186, 186);
+      }
+
+      tbody{
+        background-color: rgb(190, 255, 111);
+      }
+
+      tfoot{
+        background-color: rgb(142, 255, 217);
+      }
+      </style>
+    <!-- Створення таблиць -->   
+    <h1>Використання тегів та атрибутів для роботи з Таблицями:</h1>
+    <h3>Теги та атрибути:</h3>
+    <ul>
+        <li><code>tr</code> — представляє рядки</li>
+        <li><code>td</code> — використовують для створення комірок</li>
+        <li><code>th</code> — використовують для додавання заголовків</li>
+        <li><code>caption</code> — використовують для додавання підпису</li>
+        <li><code>thead</code> — додає окремий заголовок до таблиці</li>
+        <li><code>tbody</code> — показує головне тіло таблиці</li>
+        <li><code>tfoot</code> — створює окремий колонтитул таблиці</li>
+    </ul>
+    <table>
+        <caption><ins>Розклад поїздів</ins></caption>
+        <thead>
+          <tr>
+            <th>Понеділок (29.02.24)</th>
+            <th>Час віправки</th>
+            <th>Час прибуття</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Біла Церква - Київ</td>
+          <td>6:30</td>
+          <td>8:40</td>
+        </tr> 
+        <tr>
+          <td>Київ - Житомир</td>  
+          <td>6:55</td>
+          <td>10:25</td>
+        </tr>
+        <tr>
+          <td>Козятин - Київ</td>  
+          <td>7:15</td>
+          <td>10:55</td>
+        </tr> 
+        <tr>
+          <td>Київ - Львів</td>  
+          <td>8:00</td>
+          <td>17:40</td>
+        </tr> 
+        </tbody>
+        <tfoot>
+            <tr >
+                <td colspan="3">Далі</td>
+              </tr> 
+        </tfoot>
+        </table>
+</body>
+</html>
